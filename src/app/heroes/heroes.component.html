@@ -1,0 +1,31 @@
+<h2 class="">My Heroes</h2>
+<div class="container-xl">
+    <div class="row justify-content-evenly">
+        <div class="col-md-2">
+            <label class="label-hero">Hero name:
+                <input #heroName id="heroName"/>
+            </label>
+            <button class="btn-add" (click)="add(heroName.value); heroName.value=''">
+                add
+            </button>
+        </div>
+
+        <div class="col-md-5">
+            <ul class="heroes">
+                <li *ngFor="let hero of heroes">
+                    <a class="link-a" routerLink="/detail/{{hero.id}}">
+                        <span class="badge">{{hero.id}}</span> {{hero.name}}
+                    </a>
+                    <button class="delete btn btn-danger" title="delete hero" (click)="delete(hero)">x</button>
+
+                </li>
+
+
+            </ul>
+        </div>
+
+
+    </div>
+
+
+    <!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->

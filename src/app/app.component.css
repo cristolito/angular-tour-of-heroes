@@ -1,0 +1,38 @@
+/* Estilos para el navbar */
+
+/* Columnas */
+.div-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+    background-color: #333; /* Color de fondo */
+  }
+  
+  .navbar-nav {
+    display: flex; /* Mostrar elementos en una fila */
+    justify-content: space-between; /* Espaciar elementos uniformemente */
+  }
+  
+  .nav-item {
+    list-style-type: none; /* Quita los estilos de lista */
+  }
+  
+  .nav-link {
+    text-decoration: none; /* Quita subrayado de enlaces */
+    color: white; /* Color de texto */
+    padding: 0.5rem; /* Espaciado interno */
+  }
+  
+  .nav-link:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
+  }
+
+  .title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  

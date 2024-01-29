@@ -1,0 +1,14 @@
+<div class="container-xl" *ngIf="hero">
+
+    <h2 class="h2">{{hero.name | uppercase}} Details</h2>
+    <div class="container-id"><span>id: </span>{{hero.id}}</div>
+    <div>
+        <label>Name:
+            <input [(ngModel)]="hero.name" placeholder="name" />
+        </label>
+    </div>
+
+</div>
+
+<button class="btn btn-danger" (click)="goBack()">go back</button>
+<button class="btn btn-success" (click)="save()">save</button>
